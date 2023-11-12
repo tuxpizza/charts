@@ -1,0 +1,33 @@
+apiVersion: v2
+appVersion: "latest"
+dependencies:
+  - name: common
+    repository: https://library-charts.truecharts.org
+    version: 14.3.5
+  - condition: redis.enabled
+    name: redis
+    repository: https://deps.truecharts.org
+    version: 6.0.66
+deprecated: false
+description: Use Tiktok with an alternative frontend, inspired by Nitter.
+home: https://truecharts.org/charts/incubator/proxitok
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/proxitok.png
+keywords:
+  - proxitok
+  - media
+  - tiktok
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - email: info@truecharts.org
+    name: TrueCharts
+    url: https://truecharts.org
+name: proxitok
+sources:
+  - https://github.com/truecharts/charts/tree/master/charts/stable/libremdb
+  - https://github.com/zyachel/libremdb
+  - https://github.com/PussTheCat-org/docker-libremdb-quay
+type: application
+version: 1.0.0
+annotations:
+  truecharts.org/category: media
+  truecharts.org/SCALE-support: "true"
